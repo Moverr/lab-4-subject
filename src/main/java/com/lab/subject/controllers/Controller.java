@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class Controller {
-    
-    @Value("words")
-    String words ;
-    
+
+    @Value("${words}")
+    String words;
+
     @GetMapping("/")
     public @ResponseBody
     String getWord() {
