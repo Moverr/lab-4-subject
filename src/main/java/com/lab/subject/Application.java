@@ -6,11 +6,18 @@
 package com.lab.subject;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  *
  * @author muyin
  */
+
+@EnableDiscoveryClient
+@SpringBootApplication
 public class Application {
-     SpringApplication.run(Application.class, args);
+       public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
 }
